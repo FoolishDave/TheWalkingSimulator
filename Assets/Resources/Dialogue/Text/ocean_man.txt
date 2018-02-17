@@ -1,0 +1,24 @@
+[OPTIONS]
+fade:0.5
+[DIALOGUE_START]
+[00:00:00]Ocean man, take me by the hand, lead me to the land
+[00:06:55]that you understand 
+[00:09:00]Ocean man, the voyage to the corner of the globe is a real trip 
+[00:17:00]Ocean man, the crust of a tan man imbibed by the sand 
+[00:22:00]Soaking up the thirst of the land
+[00:25:00]Ocean man, can you see through the wonder of amazement at the oberman 
+[00:32:55]Ocean man, the crust is elusive when it casts forth to the childlike man 
+[00:40:50]Ocean man, the sequence of a life form braised in the sand
+[00:46:00]Soaking up the thirst of the land
+[00:48:00]Ocean man 
+[00:56:00]Ocean man 
+[01:04:00]Ocean man
+[01:11:00]Ocean man, take me by the hand, lead me to the land that you understand 
+[01:19:50]Ocean man, the voyage to the corner of the globe is a real trip 
+[01:27:50]Ocean man, the crust of a tan man imbibed by the sand 
+[01:33:00]Soaking up the thirst of the land
+[01:35:50]Ocean man, can you see through the wonder of amazement at the oberman 
+[01:43:00]Ocean man, the crust is elusive when it casts forth to the childlike man 
+[01:51:00]Ocean man, the sequence of a life form braised in the sand
+[01:56:50]Soaking up the thirst of the land
+[01:58:50]Ocean man
