@@ -59,6 +59,7 @@ public class DialogueManager : MonoBehaviour {
 
     private void LoadDialogueStrings(string clipName)
     {
+        Debug.Log("Loading strings for " + clipName);
         TextAsset textFile = Resources.Load("Dialogue/Text/" + clipName) as TextAsset;
         Match fadeMatch = Regex.Match(textFile.text, @"fade:([0-9]*\.?[0-9]*)");
         if (fadeMatch.Success)

@@ -1,0 +1,5 @@
+[OPTIONS]
+fade:0.5
+[DIALOGUE_START]
+[00:00:00]David: After walking down the dark hallway, the player will have activated two of what I call "walking triggers".
+[00:05:55]David: These activate a voice clip whenever a player passes through them.

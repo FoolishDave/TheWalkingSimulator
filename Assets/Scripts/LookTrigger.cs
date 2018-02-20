@@ -7,6 +7,7 @@ public class LookTrigger : MonoBehaviour {
     public float LookTime = 1f;
     public float LookTolerance = 0.9f;
     public bool OneTimeTrigger;
+    public float LookDistance = 5f;
     public string AudioClip;
     private Camera mainCam;
     private float lookingTimer;
@@ -21,8 +22,9 @@ public class LookTrigger : MonoBehaviour {
     {
         Vector3 dirToCam = (transform.position - mainCam.transform.position).normalized;
         float dotProd = Vector3.Dot(dirToCam, mainCam.transform.forward);
-
-        if (dotProd > LookTolerance)
+        RaycastHit raycastInfo;
+        
+        if (dotProd > LookTolerance && Physics.Raycast(transform.position, -dirToCam, out raycastInfo, LookDistance) && raycastInfo.rigidbody.tag == "Player")
         {
             lookingTimer += Time.fixedDeltaTime;
             if (lookingTimer > LookTime && !triggered)
@@ -38,5 +40,11 @@ public class LookTrigger : MonoBehaviour {
                 triggered = false;
             }
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Ray ray = new Ray(transform.position, mainCam.transform.position - transform.position);
+        Gizmos.DrawRay(ray);
     }
 }

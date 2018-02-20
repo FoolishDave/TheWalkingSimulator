@@ -7,6 +7,7 @@ TagManager:
   - PickUp
   - Carry
   - InteractAudio
+  - LookTrigger
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,6 @@
+[OPTIONS]
+fade:0.5
+[DIALOGUE_START]
+[00:00:00]David: You really shouldn't stare.
+[00:01:85]David: But in the case that you do, I have a trigger that activates once the player has been looking at a certain object for a certain amount of time.
+[00:09:60]David: This blue block is one example of that.

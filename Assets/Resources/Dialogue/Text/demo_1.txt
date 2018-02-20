@@ -1,0 +1,5 @@
+[OPTIONS]
+fade:0.5
+[DIALOGUE_START]
+[00:00:00]David: Congratulations, you've just taken your first steps into what I call "The Walking Simulator"
+[00:04:14]David: The project which I'll be working on for the rest of this semester, and potentially longer.

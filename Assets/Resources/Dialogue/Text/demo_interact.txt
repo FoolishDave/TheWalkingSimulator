@@ -1,0 +1,7 @@
+[OPTIONS]
+fade:0.5
+[DIALOGUE_START]
+[00:00:00]David: By clicking on the red block, you activated what I call an "Interaction Trigger"
+[00:05:07]David: This is similar to the pages in "Gone Home".
+[00:08:22]David: When a user interacts with one of these objects, it will play an audio clip...
+[00:13:03]David: ...or trigger some other type of action.
