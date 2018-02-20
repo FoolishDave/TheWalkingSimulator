@@ -30,14 +30,20 @@ public class DialogueManager : MonoBehaviour {
 
     private void Update()
     {
-        if (audioSource.isPlaying && audioSource.time > nextDialogueTime && dialogueStrings.Count > 0)
+        if (audioSource.isPlaying && audioSource.time > nextDialogueTime)
         {
             GameObject newSubtitles = Instantiate(Resources.Load("Prefabs/Subtitles"), canvas.transform) as GameObject;
             //newSubtitles.transform.SetParent(canvas.transform);
             newSubtitles.GetComponent<Text>().text = nextDialogue;
             currentSubtitle = newSubtitles.GetComponent<SubtitleFade>();
             currentSubtitle.FadeIn(fade);
-            GetNextDialogue(dialogueStrings.Dequeue());
+            if (dialogueStrings.Count > 0)
+            {
+                GetNextDialogue(dialogueStrings.Dequeue());
+            } else
+            {
+                nextDialogueTime = audioSource.clip.length;
+            }
         } else if (currentSubtitle != null && audioSource.time > nextDialogueTime - fade)
         {
             currentSubtitle.FadeOutAndDestroy(fade);

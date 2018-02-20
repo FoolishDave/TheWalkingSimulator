@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioTrigger : MonoBehaviour {
+public class AudioTouchTrigger : MonoBehaviour {
 
     public string AudioClip;
     public bool OneTimeTrigger;

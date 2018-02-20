@@ -1,0 +1,5 @@
+[OPTIONS]
+fade:0.5
+[DIALOGUE_START]
+[00:00:00]It is Wednesday, my dudes.
+[00:01:95]aaaaaaAAaAAAAaaAAAAAAAAAAAHHHHHHHHHHHHHH!!!!!!!!!!
