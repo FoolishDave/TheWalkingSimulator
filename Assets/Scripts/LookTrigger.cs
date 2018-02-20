@@ -23,8 +23,8 @@ public class LookTrigger : MonoBehaviour {
         Vector3 dirToCam = (transform.position - mainCam.transform.position).normalized;
         float dotProd = Vector3.Dot(dirToCam, mainCam.transform.forward);
         RaycastHit raycastInfo;
-        
-        if (dotProd > LookTolerance && Physics.Raycast(transform.position, -dirToCam, out raycastInfo, LookDistance) && raycastInfo.rigidbody.tag == "Player")
+        Physics.Raycast(transform.position, -dirToCam, out raycastInfo, LookDistance);
+        if (dotProd > LookTolerance && raycastInfo.collider != null && raycastInfo.collider.tag == "Player")
         {
             lookingTimer += Time.fixedDeltaTime;
             if (lookingTimer > LookTime && !triggered)
@@ -40,11 +40,5 @@ public class LookTrigger : MonoBehaviour {
                 triggered = false;
             }
         }
-    }
-
-    private void OnDrawGizmos()
-    {
-        Ray ray = new Ray(transform.position, mainCam.transform.position - transform.position);
-        Gizmos.DrawRay(ray);
     }
 }

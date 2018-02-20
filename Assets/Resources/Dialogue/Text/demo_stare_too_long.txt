@@ -1,0 +1,5 @@
+[OPTIONS]
+fade:0.5
+[DIALOGUE_START]
+[00:00:00]David: I know this block is really interesting, but...
+[00:02:91]David: ...you should really try clicking on it, that's, kind of why it got highlighted.

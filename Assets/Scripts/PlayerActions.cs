@@ -32,6 +32,11 @@ public class PlayerActions : MonoBehaviour
                 FireActionUp();
             }
         }
+
+        if (Input.GetKeyDown("q"))
+        {
+            Application.Quit();
+        }
     }
 
     private void FireActionDown()
